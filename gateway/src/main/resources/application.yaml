@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    discovery:
+      enabled: true
+#    gateway:
+#      routes:
+#          - id: r1
+#            uri: lb://CUSTOMER_SERVICE
+#            predicates:
+#              - Path= /customers/**
+#          - id: r2
+#            uri: lb://INVENTORY_SERVICE
+#            predicates:
+#              - Path= /products/**
+eureka:
+  instance:
+    prefer-ip-address: true
